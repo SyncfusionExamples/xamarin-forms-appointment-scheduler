@@ -1,1 +1,1 @@
-# xamarin-forms-appointment-scheduler
+Appointment scheduler in Xamarin.Forms
