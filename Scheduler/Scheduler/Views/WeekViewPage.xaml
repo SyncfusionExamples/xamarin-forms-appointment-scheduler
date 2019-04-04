@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:behaviors="clr-namespace:Scheduler.Behaviors"
+             xmlns:local="clr-namespace:Scheduler.ViewModels"
+             xmlns:syncfusion="clr-namespace:Syncfusion.SfSchedule.XForms;assembly=Syncfusion.SfSchedule.XForms"
+             x:Class="Scheduler.Views.WeekViewPage" Title="Week">
+    
+    <ContentPage.BindingContext>
+        <local:WeekViewPageViewModel/>
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        <syncfusion:SfSchedule DataSource="{Binding Meetings}" ScheduleView="WeekView" AllowAppointmentDrag="True">
+
+            <syncfusion:SfSchedule.Behaviors>
+                <behaviors:ChartSelectionChangedBehavior/>
+            </syncfusion:SfSchedule.Behaviors>
+
+            <syncfusion:SfSchedule.AppointmentMapping>
+                <syncfusion:ScheduleAppointmentMapping 
+                    EndTimeMapping="EndTime"
+                    StartTimeMapping="StartTime"
+                    SubjectMapping="Subject"/>
+            </syncfusion:SfSchedule.AppointmentMapping>
+        </syncfusion:SfSchedule>
+    </ContentPage.Content>
+</ContentPage>

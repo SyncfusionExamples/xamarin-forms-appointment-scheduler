@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Scheduler"
+             xmlns:syncfusion="clr-namespace:Syncfusion.SfSchedule.XForms;assembly=Syncfusion.SfSchedule.XForms"
+             xmlns:views="clr-namespace:Scheduler.Views"
+             x:Class="Scheduler.MainPage" Title="Syncfusion Scheduler">
+
+    <TabbedPage.ToolbarItems>
+        <ToolbarItem Name="Add" Clicked="MenuItem_OnClicked"></ToolbarItem>
+    </TabbedPage.ToolbarItems>
+
+    <views:DayViewPage/>
+    <views:WeekViewPage/>
+    <views:WorkWeekViewPage/>
+    <views:MonthViewPage/>
+</TabbedPage>

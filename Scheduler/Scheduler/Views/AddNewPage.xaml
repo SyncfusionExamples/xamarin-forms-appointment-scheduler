@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Scheduler.ViewModels"
+             xmlns:dataform="clr-namespace:Syncfusion.XForms.DataForm;assembly=Syncfusion.SfDataForm.XForms"
+             x:Class="Scheduler.Views.AddNewPage" Title="Add New Meeting">
+    <ContentPage.BindingContext>
+        <local:AddNewPageViewModel/>
+    </ContentPage.BindingContext>
+    <StackLayout>
+        <dataform:SfDataForm DataObject="{Binding NewMeeting}"/>
+        <Button Text="Add" Clicked="Button_Clicked" Command="{Binding Submit}"/>
+    </StackLayout>
+</ContentPage>

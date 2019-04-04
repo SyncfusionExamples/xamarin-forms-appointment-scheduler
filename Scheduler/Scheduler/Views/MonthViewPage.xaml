@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Scheduler.ViewModels"
+             xmlns:behaviors="clr-namespace:Scheduler.Behaviors"
+             xmlns:syncfusion="clr-namespace:Syncfusion.SfSchedule.XForms;assembly=Syncfusion.SfSchedule.XForms"
+             x:Class="Scheduler.Views.MonthViewPage" Title="Month">
+    
+    <ContentPage.BindingContext>
+        <local:MonthViewPageViewModel/>
+    </ContentPage.BindingContext>
+    
+    <ContentPage.Content>
+        <syncfusion:SfSchedule DataSource="{Binding Meetings}" ShowAppointmentsInline="true" ScheduleView="MonthView" AllowAppointmentDrag="True">
+
+            <syncfusion:SfSchedule.Behaviors>
+                <behaviors:ChartSelectionChangedBehavior/>
+            </syncfusion:SfSchedule.Behaviors>
+
+            <syncfusion:SfSchedule.AppointmentMapping>
+                <syncfusion:ScheduleAppointmentMapping 
+                    EndTimeMapping="EndTime"
+                    StartTimeMapping="StartTime"
+                    SubjectMapping="Subject"/>
+            </syncfusion:SfSchedule.AppointmentMapping>
+        </syncfusion:SfSchedule>
+    </ContentPage.Content>
+    
+</ContentPage>
