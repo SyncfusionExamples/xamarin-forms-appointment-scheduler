@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
@@ -52,7 +53,11 @@ namespace Scheduler.UWP
 
                 rootFrame.NavigationFailed += OnNavigationFailed;
 
-                Xamarin.Forms.Forms.Init(e);
+                Xamarin.Forms.Forms.Init(e, new List<Assembly>
+                {
+                    typeof(Syncfusion.SfSchedule.XForms.UWP.SfScheduleRenderer).GetTypeInfo().Assembly,
+                    typeof(Syncfusion.XForms.UWP.DataForm.SfDataFormRenderer).GetTypeInfo().Assembly
+                });
 
                 if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
                 {

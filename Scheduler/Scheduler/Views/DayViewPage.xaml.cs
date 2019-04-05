@@ -5,17 +5,18 @@ using System.Text;
 using System.Threading.Tasks;
 using Scheduler.Model;
 using Scheduler.ViewModels;
+using Syncfusion.SfSchedule.XForms;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace Scheduler.Views
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class DayViewPage : ContentPage
-	{
-		public DayViewPage()
-		{
-			InitializeComponent ();
-		}
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class DayViewPage : ContentPage
+    {
+        public DayViewPage()
+        {
+            InitializeComponent();
+        }
     }
 }

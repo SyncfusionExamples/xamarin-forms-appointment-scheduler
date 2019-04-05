@@ -13,6 +13,7 @@ namespace Scheduler.Model
         private string _location;
         private DateTime _startTime;
         private DateTime _endTime;
+        private string _color = "#7BC667";
 
         public string Subject
         {
@@ -21,6 +22,21 @@ namespace Scheduler.Model
             {
                 if (value == _subject) return;
                 _subject = value;
+                switch (_subject)
+                {
+                    case "General Meeting":
+                        Color = "#7BC667";
+                        break;
+                    case "Release Retrospective":
+                        Color = "#9466F2";
+                        break;
+                    case "Sprint Meeting":
+                        Color = "#37AA97";
+                        break;
+                    default:
+                        Color = "#4C3AB9";
+                        break;                        
+                }
                 OnPropertyChanged();
             }
         }
@@ -36,7 +52,18 @@ namespace Scheduler.Model
             }
         }
 
-#region DataFormSource
+        public string Color
+        {
+            get => _color;
+            set
+            {
+                if (value == _color) return;
+                _color = value;
+                OnPropertyChanged();
+            }
+        }
+
+        #region DataFormSource
         private DateTime _date;
         [DataType(DataType.Date), Display(Name = "Date")]
         public DateTime Date
