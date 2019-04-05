@@ -17,7 +17,7 @@ This project uses the following Syncfusion controls:
 
 | Platforms | Supported versions |
 | --------- | ------------------ |
-| Android   | API level 21 and later versions |
+| Android   | API level 19 and later versions |
 | iOS | iOS 9.0 and later versions |
 
 Refer to the following link for more details: 
