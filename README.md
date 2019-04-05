@@ -48,7 +48,7 @@ Refer to the following link for more details:
 
 Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key#xamarinforms) for more details.
 
-3. Set any one of the platform specific projects (iOS, Android) as a start-up project.
+3. Set any one of the platform specific projects (iOS, Android or UWP) as a start-up project.
 4. Clean and build the application.
 5. Run the application.
 
