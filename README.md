@@ -23,7 +23,7 @@ This project uses the following Syncfusion controls:
 Refer to the following link for more details: 
 [System Requirements](https://help.syncfusion.com/xamarin/installation-and-upgrade/system-requirements)
 
-## Requirements to run the demo
+## Requirements to run the sample
 
 * [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/) or [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac/)
 * Xamarin add-ons for Visual Studio (available in Visual Studio installer)
