@@ -43,7 +43,7 @@ Refer to the following link for more details:
 
             InitializeComponent();
 
-            MainPage = new MasterDetail();
+            MainPage = new NavigationPage(new MainPage());
         }
 
 Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key#xamarinforms) for more details.
