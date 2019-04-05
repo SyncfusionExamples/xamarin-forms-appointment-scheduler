@@ -5,7 +5,7 @@ This app loads the appointments in a calendar and allows you to reschedule the a
 
 This project uses the following Syncfusion controls:
 
-* [SfSchedule](https://www.syncfusion.com/xamarin-ui-controls/scheduler)
-* [SfDataForm](https://www.syncfusion.com/xamarin-ui-controls/dataform)
+* [SfSchedule](https://www.syncfusion.com/xamarin-ui-controls/scheduler) - To show the appointments.
+* [SfDataForm](https://www.syncfusion.com/xamarin-ui-controls/dataform) - To add a new appointment.
 
 <h2>Screenshots</h2>
