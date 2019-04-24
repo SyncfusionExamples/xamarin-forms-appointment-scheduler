@@ -9,7 +9,7 @@ using Xamarin.Forms;
 
 namespace Scheduler.Behaviors
 {
-    public class ChartSelectionChangedBehavior : Behavior<SfSchedule>
+    public class ScheduleDragAndDropBehavior : Behavior<SfSchedule>
     {
         public View AssociatedObject { get; private set; }
 

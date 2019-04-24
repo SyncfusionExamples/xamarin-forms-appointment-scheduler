@@ -14,7 +14,7 @@
         <syncfusion:SfSchedule DataSource="{Binding Meetings}" ScheduleView="WeekView" AllowAppointmentDrag="True">
 
             <syncfusion:SfSchedule.Behaviors>
-                <behaviors:ChartSelectionChangedBehavior/>
+                <behaviors:ScheduleDragAndDropBehavior/>
             </syncfusion:SfSchedule.Behaviors>
 
             <syncfusion:SfSchedule.AppointmentMapping>
